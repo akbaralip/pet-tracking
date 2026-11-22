@@ -1,0 +1,68 @@
+# Root .gitignore for Pet Identification & Tracking Platform
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# Python & Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Django media, staticfiles & databases
+server/media/
+server/staticfiles/
+*.sqlite3
+db.sqlite3
+
+# Node & Frontend (Client)
+client/node_modules/
+client/dist/
+client/dist-ssr/
+client/*.local
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
